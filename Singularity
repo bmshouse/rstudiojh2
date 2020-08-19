@@ -38,6 +38,8 @@ R --vanilla -e "install.packages('pdftools',dependencies=TRUE, repos='http://cra
 
 %environment
 
+#permanent: 
+
 export PATH=$PATH:/usr/lib/rstudio/bin:/usr/lib/rstudio-server/bin
 JAVA_HOME=/opt/conda/pkgs/openjdk-11.0.1-h600c080_1018
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$JAVA_HOME/lib/server/
