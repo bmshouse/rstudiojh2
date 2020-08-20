@@ -1,5 +1,5 @@
 Bootstrap:docker
-From:jupyter/r-notebook:f200ab964cea
+From:jupyter/r-notebook:29e069665f5f
 
 %files
 
@@ -26,6 +26,10 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/conda/lib/pkgconfig
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$JAVA_HOME/lib/server/
 
 R --vanilla CMD javareconf
+
+apt-get clean
+rm -rf /var/lib/apt/lists/*
+rm -rf /tmp/*
 
 %environment
 
