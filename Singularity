@@ -12,7 +12,7 @@ apt-get upgrade -y --no-install-recommends
 apt-get install -y --no-install-recommends libcairo2-dev libpq-dev r-cran-rcpp
 
 
-conda install --yes --quiet -c conda-forge nbgitpuller nbrsessionproxy jupyter-rsession-proxy openjdk r-rjava r-webp gdal tesseract leptonica
+conda install --yes --quiet -c conda-forge nbgitpuller nbrsessionproxy jupyter-rsession-proxy openjdk r-rjava r-ggpubr r-pdftools r-webp gdal tesseract leptonica
 rm -rf /opt/conda/pkgs/*.bz2
 
 jupyter serverextension enable --py nbgitpuller --sys-prefix
@@ -37,8 +37,8 @@ R --vanilla -e "install.packages('RcppParallel',dependencies=TRUE, repos='http:/
 R --vanilla -e "install.packages('tidytext',dependencies=TRUE, repos='http://cran.rstudio.com/')"
 R --vanilla -e "install.packages('textdata',dependencies=TRUE, repos='http://cran.rstudio.com/')" 
 R --vanilla -e "install.packages('widyr',dependencies=TRUE, repos='http://cran.rstudio.com/')" 
-R --vanilla -e "install.packages('pdftools',dependencies=TRUE, repos='http://cran.rstudio.com/')" 
-R --vanilla -e "install.packages('ggpubr',dependencies=TRUE, repos='http://cran.rstudio.com/')"
+#R --vanilla -e "install.packages('pdftools',dependencies=TRUE, repos='http://cran.rstudio.com/')" 
+#R --vanilla -e "install.packages('ggpubr',dependencies=TRUE, repos='http://cran.rstudio.com/')"
 R --vanilla -e "install.packages('tm',dependencies=TRUE, repos='http://cran.rstudio.com/')"
 R --vanilla -e "install.packages('eply',dependencies=TRUE, repos='http://cran.rstudio.com/')"
 
