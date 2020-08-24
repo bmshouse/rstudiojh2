@@ -48,6 +48,7 @@ R --vanilla -e "install.packages('plotly',dependencies=TRUE, repos='http://cran.
 R --vanilla -e "install.packages('testthat',dependencies=TRUE, repos='http://cran.rstudio.com/')"
 R --vanilla -e "install.packages('swirl',dependencies=TRUE, repos='http://cran.rstudio.com/')"
 R --vanilla -e "install.packages('deSolve',dependencies=TRUE, repos='http://cran.rstudio.com/')"
+R --vanilla -e "install.packages(c("rlang", "pillar", "glue", "purrr", "tidyselect", "dplyr", "tidyr", "backports", "broom", "tibble"), repos='http://cran.rstudio.com/')" 
 
 apt-get clean
 rm -rf /var/lib/apt/lists/*
